@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte e Contato</title>
+    <link rel="stylesheet" href="css/suporte.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="suporte">
+            <h1>Fale Conosco</h1>
+            <p>Estamos aqui para ajudar! Escolha um dos canais ou envie uma mensagem pelo formulário abaixo:</p>
+            <div class="contato-lista">
+                <article class="contato-item">
+                    <h2>WhatsApp</h2>
+                    <p>Converse com nossa equipe pelo WhatsApp.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank">
+                        <button>Entrar em Contato</button>
+                    </a>
+                </article>
+                <article class="contato-item">
+                    <h2>Email</h2>
+                    <p>Envie-nos um email com suas dúvidas.</p>
+                    <a href="mailto:suporte@minhaloja.com">
+                        <button>Enviar Email</button>
+                    </a>
+                </article>
+                <article class="contato-item">
+                    <h2>Telefone</h2>
+                    <p>Ligue para nosso suporte.</p>
+                    <a href="tel:+5511999999999">
+                        <button>Fazer Chamada</button>
+                    </a>
+                </article>
+            </div>
+            <div id="formulario-suporte">
+                <h2>Envie uma Mensagem</h2>
+                <form action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

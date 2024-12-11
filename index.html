@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à Minha Loja</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Bem-vindo à Minha Loja</h1>
+            <p>Os melhores produtos ao seu alcance, com qualidade e confiança.</p>
+            <a href="produtos.html" class="btn">Ver Produtos</a>
+        </div>
+    </header>
+    
+    <main>
+        <section id="sobre-nos">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma loja online com uma vasta gama de produtos de qualidade, com foco em oferecer uma experiência de compra única e segura.</p>
+            </div>
+        </section>
+
+        <section id="produtos-destaque">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <div class="produtos-cards">
+                    <div class="produto-card">
+                        <img src="img/produto1.jpg" alt="Produto 1">
+                        <h3>Smartphone X</h3>
+                        <p>Smartphone de alta performance, perfeito para o dia a dia.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="img/produto2.jpg" alt="Produto 2">
+                        <h3>Camiseta Estilo</h3>
+                        <p>Camiseta confortável e moderna para todas as ocasiões.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="img/produto3.jpg" alt="Produto 3">
+                        <h3>Fone de Ouvido</h3>
+                        <p>Fone de ouvido com som cristalino e excelente conforto.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas-especiais">
+            <div class="container">
+                <h2>Ofertas Especiais</h2>
+                <div class="oferta-card">
+                    <h3>Desconto de 20% em Eletrônicos</h3>
+                    <p>Oferta válida para todos os eletrônicos da loja. Não perca!</p>
+                    <a href="produtos.html" class="btn">Ver Ofertas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Animações de scroll para as seções
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', function() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const sectionHeight = section.offsetHeight;
+                    if (sectionTop < window.innerHeight && sectionTop + sectionHeight > 0) {
+                        section.classList.add('visible');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

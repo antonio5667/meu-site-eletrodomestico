@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="css/categorias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="categorias">
+            <h1>Categorias</h1>
+            <div class="categorias-lista">
+                <div class="categoria-item">
+                    <img src="imgproduto3.jpg" alt="DESCRIÇÃO DA IMAGEM">
+                    <h3>Eletrônicos</h3>
+                    <p>Smartphones, televisores, e mais!</p>
+                    <button class="ver-categoria" onclick="verProdutos('eletronicos')">Ver Produtos</button>
+                </div>
+                <div class="categoria-item">
+                    <img src="Televisao.jpg" alt="TELEVISORES">
+                    <h3>televisores</h3>
+                    <p>TELEVISORES DE ATE 70 POLEGADAS</p>
+                    <button class="ver-categoria" onclick="verProdutos('televisores')">Ver Produtos</button>
+                </div>
+                <div class="categoria-item">
+                    <img src="produto2.jpg" alt="DESCRIÇÃO DA IMAGEM">
+                    <h3>Smartphones</h3>
+                    <p>OS MELHORES SMARTFONES DA REGIAO.</p>
+                    <button class="ver-categoria" onclick="verProdutos('Smartphones')">Ver Produtos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function verProdutos(categoria) {
+            alert("Você visualizou a categoria: " + categoria);
+        }
+    </script>
+</body>
+</html>
+

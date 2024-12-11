@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h1>Todos os Produtos</h1>
+            <div id="filtros">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value="todos">Todos</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="Notebooks">Notebooks</option>
+                    <option value="SMARTFONES">SMARTFONES</option>
+                </select>
+                <label for="preco">Preço:</label>
+                <select id="preco">
+                    <option value="todos">Todos</option>
+                    <option value="baixo">Até R$100</option>
+                    <option value="medio">R$100 - R$500</option>
+                    <option value="alto">Acima de R$500</option>
+                </select>
+            </div>
+            <div class="produtos-lista">
+                <div class="produto-item">
+                    <img src="img/produto1.jpg" alt="S24 256GB">
+                    <h3>Smartphone S24</h3>
+                    <p>Smartphone com excelente desempenho e câmera.</p>
+                    <span>R$ 5999,99</span>
+                    <button class="detalhes" onclick="mostrarDetalhes()">Ver Detalhes</button>
+                </div>
+                <div class="produto-item">
+                    <img src="img/produto2.jpg" alt="Notebook">
+                    <h3>Notebook</h3>
+                    <p>Notebook Samsung Galaxy Book2 Intel Core I5-1235U, 8GB, 256GB, Windows 11 Home, 15,6", Grafite</p>
+                    <span>R$3899,99</span>
+                    <button class="detalhes" onclick="mostrarDetalhes()">Ver Detalhes</button>
+                </div>
+                <div class="produto-item">
+                    <img src="img/produto3.jpg" alt=" Xbox Series S 512gb">
+                    <h3>Microsoft Xbox Series S 512gb Standard Cor Branco</h3>
+                    <p>Perfeita para jogos de última geração.</p>
+                    <span>R$ 3499,000</span>
+                    <button class="detalhes" onclick="mostrarDetalhes()">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarDetalhes() {
+            alert("Detalhes do produto serão exibidos em breve!");
+        }
+    </script>
+</body>
+</html>
